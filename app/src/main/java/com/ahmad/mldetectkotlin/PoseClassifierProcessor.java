@@ -49,10 +49,12 @@ public class PoseClassifierProcessor {
   // Specify classes for which we want rep counting.
   // These are the labels in the given {@code POSE_SAMPLES_FILE}. You can set your own class labels
   // for your pose samples.
-  private static final String PUSHUPS_CLASS = "pushups_down";
-  private static final String SQUATS_CLASS = "squats_down";
+  private static final String LIFTS_UP_CLASS = "lift_up";
+  private static final String LIFTS_DOWN_CLASS = "lift_down";
+  private static final String STANDING_LEFT_CLASS = "standing_left";
+  private static final String STANDING_RIGHT_CLASS = "standing_right";
   private static final String[] POSE_CLASSES = {
-    PUSHUPS_CLASS, SQUATS_CLASS
+          LIFTS_UP_CLASS, LIFTS_DOWN_CLASS, STANDING_LEFT_CLASS, STANDING_RIGHT_CLASS
   };
 
   private final boolean isStreamMode;
